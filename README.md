@@ -2,7 +2,7 @@
       This is my path to training the basics of programming with PHP.
 
 ### How to use this repository for practice
-      access example : Practice_B > src > B1.py
+      access example : Practice_B > src > B1.php
 
 ## Contents 
       
