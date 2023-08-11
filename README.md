@@ -10,7 +10,7 @@
 
 <br/>
 
-### [2.&nbsp;) &nbsp;&nbsp; PHP &nbsp;Syntax 🔗](https://developer.mozilla.org/en-US/)
+### [2.&nbsp;) &nbsp;&nbsp; PHP &nbsp;Syntax 🔗](https://www.php.net/manual/en/)
 
    -  &nbsp; PHP BASIC
       - &nbsp; input &nbsp;:&nbsp; ```echo "Hello World !```
@@ -69,7 +69,7 @@
         ```
 <br/>
 
-### [3.&nbsp;) &nbsp;&nbsp; PHP &nbsp;Exercise 🔗]()
+### [3.&nbsp;) &nbsp;&nbsp; PHP &nbsp;Exercise 🔗](https://edabit.com/challenges/php)
 
 - &nbsp; Practice B1 - B10 &nbsp;:&nbsp; input/output in java (scanner / print)
   
