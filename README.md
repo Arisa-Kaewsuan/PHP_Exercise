@@ -35,7 +35,7 @@
       
 <br/>
 
-### [2.&nbsp;) &nbsp;&nbsp; PHP &nbsp;Syntax 🔗](https://www.php.net/manual/en/)
+### [2.&nbsp;) &nbsp;&nbsp; PHP &nbsp;Syntax 🔗](https://www.phptutorial.net/)
 
    -  &nbsp; PHP BASIC
       - &nbsp; input &nbsp;:&nbsp; ```echo "Hello World !```
