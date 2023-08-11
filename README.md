@@ -42,11 +42,31 @@
 <br/>
 
    -  &nbsp; PHP DATABASE
+      - &nbsp; มี 2 API ให้ใช้  คือ PDO (ใช้ได้กับ 12 ฐานข้อมูล) กับ MySQLi (ใช้ได้แค่กับฐานข้อมูล MySQL) ก่อนจะใช้ก็ install API ก่อน
+      - connect database แบบใช้ PDO
+        ```
+        <?php
+            $servername = "localhost";
+            $username = "username";
+            $password = "password";
 
-<br/>
-
-   -  &nbsp; PHP PDO คืออะไร ?
-
+            try
+            {
+                 $conn = new PDO("mysql:host=$servername", $username, $password);
+                 // set the PDO error mode to exception
+                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                 $sql = "CREATE DATABASE myDBPDO";
+                 // use exec() because no results are returned
+                 $conn->exec($sql);
+                 echo "Database created successfully<br>";
+            }
+            catch(PDOException $e)
+            {
+                 echo $sql . "<br>" . $e->getMessage();
+            }
+            $conn = null;
+        ?>
+        ```
 <br/>
 
 ### [3.&nbsp;) &nbsp;&nbsp; PHP &nbsp;Exercise 🔗]()
