@@ -25,9 +25,19 @@
 <br/>
 
    -  &nbsp; PHP OOP
-      - &nbsp; function
-      - &nbsp; class
-      - &nbsp; inheritance
+      - &nbsp; function &nbsp;:&nbsp; ```function helloWorld() {...}```  
+      - &nbsp; class &nbsp;:&nbsp; วิธีเรียกใช้คลาส คือ new class ดังตัวอย่าง ```$strawberry = new Strawberry("Strawberry", "red");``` &nbsp; วิธีใช้ method ในคลาสใช้เครื่องหมาย -> ดังตัวอย่าง ```$strawberry->message();```  &nbsp; วิธีสร้างคลาส และกำหนด condtructor ดังตัวอย่างข้างล่าง
+        ```
+        class Fruit
+        {
+           public $name;
+           function __construct($name)
+           {
+                 $this->name = $name;
+           }
+        }
+        ```
+      - &nbsp; inheritance &nbsp;:&nbsp; ```class Strawberry extends Fruit {...}```
 
 <br/>
 
