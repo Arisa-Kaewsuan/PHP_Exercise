@@ -1,7 +1,4 @@
-# PHP &nbsp; - &nbsp;Professional &nbsp;Home &nbsp;Page &nbsp;🚀
-
-### [1.&nbsp;) &nbsp;&nbsp; Introduction 🔗](https://www.w3schools.com/php/php_oop_classes_abstract.asp)
-
+# [PHP &nbsp; - &nbsp;Professional &nbsp;Home &nbsp;Page &nbsp; <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/>](https://www.w3schools.com/php/php_oop_classes_abstract.asp)
    -  &nbsp; PHP คืออะไร  ใช้ทำอะไร ?
 
            PHP คือ ภาษาเขียนโปรแกรมที่ใช้ทำ website ฝั่ง back-end
@@ -33,25 +30,26 @@
                   >>  วิธีที่สอง : สำหรับคนใช้ vscode สามารถ install extension ชื่อ PHP Server เวลาจะรันดูผลลัพธ์โค้ด PHP
                                ไม่ต้องรัน xampp (แต่ต้องมีนะ) >> right click แล้วเลือก PHP Server
       
+<br/><br/><br/>
+
+## [PHP &nbsp;Syntax 🔗](https://www.phptutorial.net/)
+### 1.  &nbsp; PHP BASIC &nbsp;🧠
+   - &nbsp; input &nbsp;:&nbsp; ```echo "Hello World !```
+   - &nbsp; output &nbsp;:&nbsp; ```echo "Hello World !```
+   - &nbsp; condition &nbsp;:&nbsp; ```if...elseif...else``` &nbsp; ```switch (case)``` 
+   - &nbsp; loop &nbsp;:&nbsp; ```while``` &nbsp; ```do-while``` &nbsp; ```for ($x = 0; $x <= 10; $x++)``` &nbsp; ```foreach ($colors as $value)``` &nbsp; ```break;``` &nbsp; ```continue;```
+   - &nbsp; Array &nbsp;:&nbsp; ```CREATE : $cars = array("Volvo", "BMW", "Toyota");  OR  array();``` &nbsp; ```ACCESS : $cars[0]```
+   - &nbsp; String &nbsp;:&nbsp; ```strlen()``` &nbsp; ```str_replace()``` &nbsp;  . . .
+   - &nbsp; File &nbsp;:&nbsp; ```echo readfile("file.txt");``` &nbsp; ```$myfile = fopen("webdictionary.txt", "r"); ต้อง fclose($myfile);ด้วย``` &nbsp;
+   - &nbsp; [Cookies & Session](https://www.borntodev.com/2020/07/10/cookie-vs-session/) &nbsp;:&nbsp; ```setcookie(name, value, expire, path, domain, secure, httponly);``` &nbsp; ```session_start();```
+
 <br/>
 
-### [2.&nbsp;) &nbsp;&nbsp; PHP &nbsp;Syntax 🔗](https://www.phptutorial.net/)
-
-   -  &nbsp; PHP BASIC
-      - &nbsp; input &nbsp;:&nbsp; ```echo "Hello World !```
-      - &nbsp; output &nbsp;:&nbsp; ```echo "Hello World !```
-      - &nbsp; condition &nbsp;:&nbsp; ```if...elseif...else``` &nbsp; ```switch (case)``` 
-      - &nbsp; loop &nbsp;:&nbsp; ```while``` &nbsp; ```do-while``` &nbsp; ```for ($x = 0; $x <= 10; $x++)``` &nbsp; ```foreach ($colors as $value)``` &nbsp; ```break;``` &nbsp; ```continue;```
-      - &nbsp; Array &nbsp;:&nbsp; ```CREATE : $cars = array("Volvo", "BMW", "Toyota");  OR  array();``` &nbsp; ```ACCESS : $cars[0]```
-      - &nbsp; String &nbsp;:&nbsp; ```strlen()``` &nbsp; ```str_replace()``` &nbsp;  . . .
-      - &nbsp; File &nbsp;:&nbsp; ```echo readfile("file.txt");``` &nbsp; ```$myfile = fopen("webdictionary.txt", "r"); ต้อง fclose($myfile);ด้วย``` &nbsp;
-      - &nbsp; [Cookies & Session](https://www.borntodev.com/2020/07/10/cookie-vs-session/) &nbsp;:&nbsp; ```setcookie(name, value, expire, path, domain, secure, httponly);``` &nbsp; ```session_start();```
-
-<br/>
-
-   -  &nbsp; PHP OOP
-      - &nbsp; function &nbsp;:&nbsp; ```function helloWorld() {...}```  
-      - &nbsp; class &nbsp;:&nbsp; วิธีเรียกใช้คลาส คือ new class ดังตัวอย่าง ```$strawberry = new Strawberry("Strawberry", "red");``` &nbsp; วิธีใช้ method ในคลาสใช้เครื่องหมาย -> ดังตัวอย่าง ```$strawberry->message();```  &nbsp; วิธีสร้างคลาส และกำหนด condtructor ดังตัวอย่างข้างล่าง
+### 2.  &nbsp; PHP OOP &nbsp;🧠
+   - &nbsp; function &nbsp;:&nbsp; ```function helloWorld() {...}```
+     
+   - &nbsp; class &nbsp;:&nbsp; วิธีเรียกใช้คลาส คือ new class ดังตัวอย่าง ```$strawberry = new Strawberry("Strawberry", "red");``` &nbsp; วิธีใช้ method ในคลาสใช้เครื่องหมาย -> ดังตัวอย่าง ```$strawberry->message();```  &nbsp; วิธีสร้างคลาส และกำหนด condtructor ดังตัวอย่างข้างล่าง
+     
         ```
         class Fruit
         {
@@ -62,13 +60,18 @@
            }
         }
         ```
-      - &nbsp; inheritance &nbsp;:&nbsp; ```class Strawberry extends Fruit {...}```
+        
+   - &nbsp; inheritance &nbsp;:&nbsp; ```class Strawberry extends Fruit {...}```
 
 <br/>
 
-   -  &nbsp; PHP DATABASE
-      - &nbsp; มี 2 API ให้ใช้  คือ PDO (ใช้ได้กับ 12 ฐานข้อมูล) กับ MySQLi (ใช้ได้แค่กับฐานข้อมูล MySQL) ก่อนจะใช้ก็ install API ก่อน
-      - connect database แบบใช้ PDO
+### 3.  &nbsp; PHP DATABASE &nbsp;🧠
+
+               มี 2 API/driver ให้ใช้  คือ PDO (ใช้ได้กับ 12 ฐานข้อมูล) กับ MySQLi (ใช้ได้แค่กับฐานข้อมูล MySQL) ก่อนจะใช้ก็ 
+      install API/driver ก่อน
+      
+   - connect database แบบใช้ PDO
+     
         ```
         <?php
             $servername = "localhost";
@@ -94,25 +97,27 @@
             $conn = null;
         ?>
         ```
-<br/>
+<br/><br/><br/>
 
-### [3.&nbsp;) &nbsp;&nbsp; PHP &nbsp;Exercise 🔗](https://edabit.com/challenges/php)
+## [PHP &nbsp;Exercise 🔗](https://edabit.com/challenges/php)
 
-- &nbsp; Practice B1 - B10 &nbsp;:&nbsp; input/output in java (scanner / print)
+- **BEGINNER** &nbsp;&nbsp;:&nbsp;&nbsp; ฝึกให้คุ้นกับ syntax ฝึก logic
+   - [w3resource](https://www.w3resource.com/php-exercises/php-basic-exercises.php) &nbsp;&nbsp;:&nbsp;&nbsp; โจทย์ฝึก logic
+   - [tutorialsclass](https://tutorialsclass.com/exercises/php/php-all-exercises-assignments/) &nbsp;&nbsp;:&nbsp;&nbsp; โจทย์แนวฝึกใช้ syntax
+   - [techstudy](https://techstudy.org/php/php-programs-with-output)  &nbsp;&nbsp;:&nbsp;&nbsp; โจทย์แนวฝึกใช้ syntax ให้คล่อง loop , array , ...
+   - [javatpoint](https://www.javatpoint.com/php-programs) &nbsp;&nbsp;:&nbsp;&nbsp; มีอธิบายโค้ด
+   - [edabit](https://edabit.com/challenges/php) &nbsp;&nbsp;:&nbsp;&nbsp; โจทย์คล้ายๆ leetcode เลือกระดับได้ เหมาะใช้ฝึกทำก่อนไปสัมภาษณ์งาน
   
-- &nbsp; Practice C1 - C8 &nbsp;:&nbsp; loop & recursive
-  
-- &nbsp; Practice D1 - D5 &nbsp;:&nbsp; Arithmetic (+ / -/ */ sqr/ % ...)
-  
-- &nbsp; Practice E1 - E3 &nbsp;:&nbsp; loop + if-else
-  
-- &nbsp; Practice F1 - F6 &nbsp;:&nbsp; find prime number / LCM / GCF
-  
-- &nbsp; Practice H1 - H10 &nbsp;:&nbsp; Arrray / sum / min / max / sort
-  
-- &nbsp; Practice J1 - J4 &nbsp;:&nbsp; statistics (avg / mode / medien)
-  
-- &nbsp; Exercise1_01_E5 &nbsp;:&nbsp; applied problems
+- **INTERMEDIATE** &nbsp;&nbsp;:&nbsp;&nbsp; ฝึกทำโปรเจค ฝึกอ่านโค้ด  learning by doing PHP project with source code โหลดมาลองรัน ลองแก้ ลองทำความเข้าใจ
+   - [sourcecodester](https://www.sourcecodester.com/php-project) &nbsp;&nbsp;:&nbsp;&nbsp; มีอธิบาย idea และ Techstack ค่อนข้างละเอียด
+   - [phpgurukul](https://phpgurukul.com/php-projects-free-downloads/) &nbsp;&nbsp;:&nbsp;&nbsp; มีอธิบาย idea และ Techstack
+   - [interviewbit](https://www.interviewbit.com/blog/php-projects/) &nbsp;&nbsp;:&nbsp;&nbsp; แนะนำโปรเจค php บน github ที่น่าสนใจ
+   - [hackr.io](https://hackr.io/blog/php-projects) &nbsp;&nbsp;:&nbsp;&nbsp; แนะนำโปรเจค php บน github ที่น่าสนใจ
+   - [code-projects](https://code-projects.org/c/languages/project/phpprojects/) &nbsp;&nbsp;:&nbsp;&nbsp; มีอธิบาย idea และ Techstack ค่อนข้างละเอียด
+   - [phptpoint](https://www.phptpoint.com/projects/) &nbsp;&nbsp;:&nbsp;&nbsp; มีวิดิโอพาทำ
+   - [projectworlds](https://projectworlds.in/free-projects/php-projects/) &nbsp;&nbsp;:&nbsp;&nbsp; มีวิดิโอพาทำ
+   - [projectsgeek](https://projectsgeek.com/php-projects-source-code) &nbsp;&nbsp;:&nbsp;&nbsp; มีอธิบาย idea และ Techstack
+   - [itsourcecode](https://itsourcecode.com/php-project/) &nbsp;&nbsp;:&nbsp;&nbsp; มีวิดิโอพาทำ
 
 <br/>
 
